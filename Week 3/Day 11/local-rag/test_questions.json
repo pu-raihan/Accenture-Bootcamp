@@ -1,0 +1,162 @@
+[
+  {
+    "id": "q01",
+    "question": "How many paid time off (PTO) days do full-time employees receive per calendar year?",
+    "expected_answer": "Full-time employees receive twenty-five (25) days of paid time off (PTO) per calendar year, in addition to public holidays.",
+    "source_document": "company_handbook.pdf",
+    "difficulty": "easy",
+    "type": "factual"
+  },
+  {
+    "id": "q02",
+    "question": "What is the maximum nightly rate for hotel accommodation during business travel?",
+    "expected_answer": "The maximum nightly rate is €150 for domestic travel and €200 for international travel, with exceptions possible for high-cost cities like London, San Francisco, or Zurich with Finance team approval.",
+    "source_document": "company_handbook.pdf",
+    "difficulty": "easy",
+    "type": "factual"
+  },
+  {
+    "id": "q03",
+    "question": "What are the password complexity requirements for NovaTech accounts?",
+    "expected_answer": "Passwords must be minimum fourteen (14) characters, contain at least one uppercase letter, one lowercase letter, one digit, and one special character. Passwords must not contain the user's name, email address, or common dictionary words.",
+    "source_document": "security_policy.pdf",
+    "difficulty": "easy",
+    "type": "factual"
+  },
+  {
+    "id": "q04",
+    "question": "What was NovaTech's Annual Recurring Revenue (ARR) at the end of Q1 2026?",
+    "expected_answer": "Annual Recurring Revenue (ARR) reached €18.2 million at the end of Q1 2026.",
+    "source_document": "quarterly_report_q1_2026.pdf",
+    "difficulty": "easy",
+    "type": "factual"
+  },
+  {
+    "id": "q05",
+    "question": "How many pre-built report templates does ProjectHub include?",
+    "expected_answer": "ProjectHub includes 18 pre-built report templates.",
+    "source_document": "product_guide.pdf",
+    "difficulty": "easy",
+    "type": "factual"
+  },
+  {
+    "id": "q06",
+    "question": "Compare the data refresh intervals for the native ProjectHub connector across Starter, Professional, and Enterprise tiers in NovaTech Insight.",
+    "expected_answer": "The native ProjectHub connector refreshes every 60 minutes for Starter tier, every 15 minutes for Professional tier, and in real-time (less than 30 seconds) for Enterprise tier.",
+    "source_document": "product_guide.pdf",
+    "difficulty": "medium",
+    "type": "comparison"
+  },
+  {
+    "id": "q07",
+    "question": "What is the difference in password rotation requirements between employee user accounts and infrastructure credentials after the March 2026 policy change?",
+    "expected_answer": "Employee user accounts now require password rotation every 180 days (changed from 90 days in March 2026), while infrastructure credentials (SSH keys, service accounts) remain on the stricter 90-day rotation schedule.",
+    "source_document": "meeting_notes.pdf",
+    "difficulty": "medium",
+    "type": "comparison"
+  },
+  {
+    "id": "q08",
+    "question": "What are the key differences between the Shared Analytics Dashboard in ProjectHub versus in Insight?",
+    "expected_answer": "The ProjectHub dashboard has 8 pre-built widgets, cannot create custom widgets, only uses ProjectHub data, refreshes every 30 minutes, and lacks interactive drill-down and row-level security. The Insight dashboard has 8 widgets plus 30+ visualization types, supports custom widgets, can combine ProjectHub data with any connected source, has variable refresh intervals up to real-time, and includes interactive drill-down, row-level security, embedding, and scheduled distribution.",
+    "source_document": "product_guide.pdf",
+    "difficulty": "medium",
+    "type": "comparison"
+  },
+  {
+    "id": "q09",
+    "question": "How does the incident response severity classification differ between P1 (Critical) and P2 (High) incidents?",
+    "expected_answer": "P1 incidents involve confirmed unauthorized access to Restricted data or complete production outages affecting all customers, requiring acknowledgment within 15 minutes, full IRT assembly within 30 minutes, and CEO notification within 1 hour. P2 incidents involve confirmed incidents with potential impact but contained scope, such as unauthorized access to Confidential data without exfiltration, requiring acknowledgment within 1 hour, and preliminary impact assessment within 4 hours.",
+    "source_document": "security_policy.pdf",
+    "difficulty": "medium",
+    "type": "comparison"
+  },
+  {
+    "id": "q10",
+    "question": "What was the outcome of the CRM vendor selection process between Salesforce and HubSpot, and what factors influenced the decision?",
+    "expected_answer": "HubSpot Enterprise was selected over Salesforce. The decision was based on the 3-year TCO analysis (€385K for HubSpot vs €780K for Salesforce), faster implementation timeline (6-8 weeks vs 4-6 months), and sufficient enterprise capabilities. Marcos had argued Salesforce was over-engineered, and the team agreed HubSpot provided the right balance of capabilities and cost.",
+    "source_document": "meeting_notes.pdf",
+    "difficulty": "medium",
+    "type": "synthesis"
+  },
+  {
+    "id": "q11",
+    "question": "What are the approved uses for the professional development budget, and what is the annual amount?",
+    "expected_answer": "Every full-time employee receives an annual professional development budget of €2,000, which can be used for online courses and certifications, conferences and workshops (registration fees), books and subscriptions, and language courses relevant to business needs.",
+    "source_document": "company_handbook.pdf",
+    "difficulty": "easy",
+    "type": "factual"
+  },
+  {
+    "id": "q12",
+    "question": "What is the process for handling customer data deletion requests under GDPR?",
+    "expected_answer": "Under GDPR Article 17 (Right to Erasure), erasure requests are fulfilled within 30 days, subject to applicable legal retention requirements. When erasure conflicts with a legal obligation, the data is restricted from further processing instead. When a customer deletes data through the application, it is soft-deleted and recoverable for 30 days, then permanently purged within 90 days.",
+    "source_document": "security_policy.pdf",
+    "difficulty": "hard",
+    "type": "reasoning"
+  },
+  {
+    "id": "q13",
+    "question": "How do the data handling requirements differ for Confidential versus Restricted data classification levels?",
+    "expected_answer": "Confidential data requires AES-256 encryption at rest, TLS 1.2+ in transit, role-based access with manager approval, NDA for external sharing, and full access + modification logging. Restricted data requires TLS 1.3, named-individual access with CISO approval, hardware token MFA, no external sharing without CISO written authorization, real-time replication, and full access + modification + read logging, with breach notification to CISO + Legal + CEO within 1 hour.",
+    "source_document": "security_policy.pdf",
+    "difficulty": "hard",
+    "type": "comparison"
+  },
+  {
+    "id": "q14",
+    "question": "Based on the Q1 2026 report, what are the three at-risk enterprise accounts and what mitigation strategies are being applied?",
+    "expected_answer": "Three at-risk accounts: Gruber Manufacturing (€178K ARR, June renewal) with sponsor departure, receiving dedicated solutions architect support; Rheinland Utilities AG (€148K ARR, July renewal) with budget pressure, offered 12-month commitment at 10% discount; Alpen Logistics (€94K ARR, May renewal) with low adoption, enrolled in adoption acceleration program with weekly check-ins.",
+    "source_document": "quarterly_report_q1_2026.pdf",
+    "difficulty": "hard",
+    "type": "reasoning"
+  },
+  {
+    "id": "q15",
+    "question": "What is the company's policy on using personal devices to access production systems and customer data?",
+    "expected_answer": "Personal devices may not be used to access production systems, source code repositories, or customer data. Personal devices may be used to access email and Slack via approved mobile applications, provided the device meets minimum security requirements.",
+    "source_document": "company_handbook.pdf",
+    "difficulty": "medium",
+    "type": "factual"
+  },
+  {
+    "id": "q16",
+    "question": "What specific recognition do employees receive for serving as onboarding buddies?",
+    "expected_answer": "Buddies are recognized for their contribution in their own performance reviews, and exceptional buddies are eligible for the quarterly NovaStar Award (which includes a €250 bonus and recognition at the company all-hands meeting).",
+    "source_document": "company_handbook.pdf",
+    "difficulty": "medium",
+    "type": "factual"
+  },
+  {
+    "id": "q17",
+    "question": "If an employee's laptop is lost or stolen, what is the required reporting timeframe, and what might happen if the employee fails to report it within that window?",
+    "expected_answer": "Lost or stolen devices must be reported to IT within four (4) hours of discovery via the IT emergency hotline or it-security@novatech-solutions.com. Failure to report within this timeframe could result in disciplinary action as this violates IT security policy. Additionally, the delay increases the risk of unauthorized access to company data, and if customer data is compromised due to delayed reporting, the incident classification could escalate, potentially leading to breach notification requirements and further consequences for the employee including termination for gross misconduct.",
+    "source_document": "security_policy.pdf, company_handbook.pdf",
+    "difficulty": "hard",
+    "type": "reasoning"
+  },
+  {
+    "id": "q18",
+    "question": "What is the maximum reimbursement amount for mental health counseling services under the Employee Assistance Program?",
+    "expected_answer": "The documents do not contain information about reimbursement amounts for mental health services. They only state that employees may access up to eight (8) free counseling sessions per year through the EAP.",
+    "source_document": null,
+    "difficulty": "hard",
+    "type": "unanswerable"
+  },
+  {
+    "id": "q19",
+    "question": "Does NovaTech offer a 401(k) matching program for US-based employees?",
+    "expected_answer": "The documents do not contain information about 401(k) matching or any retirement benefits for US-based employees.",
+    "source_document": null,
+    "difficulty": "hard",
+    "type": "unanswerable"
+  },
+  {
+    "id": "q20",
+    "question": "What is the company's parental leave policy for new parents?",
+    "expected_answer": "The documents do not contain information about parental leave policies.",
+    "source_document": null,
+    "difficulty": "hard",
+    "type": "unanswerable"
+  }
+]

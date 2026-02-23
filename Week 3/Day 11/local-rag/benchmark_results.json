@@ -1,0 +1,166 @@
+{
+  "models": [
+    "qwen3:4b",
+    "llama3.2:3b"
+  ],
+  "results": [
+    {
+      "model": "qwen3:4b",
+      "prompt_category": "factual",
+      "prompt": "What causes tides on Earth? Answer in 2-3 sentences.",
+      "response": "Tides on Earth are primarily caused by the gravitational pull of the Moon on Earth's oceans. This creates two tidal bulges—one on the side of Earth facing the Moon and another on the opposite side—due to the Moon's gravitational force varying with distance. While the Sun also contributes to tides through its gravity, the Moon's influence is significantly stronger because it is much closer to Earth.",
+      "time_seconds": 180.721,
+      "prompt_tokens": 25,
+      "completion_tokens": 785,
+      "tokens_per_second": 4.3,
+      "subjective_rating": null
+    },
+    {
+      "model": "qwen3:4b",
+      "prompt_category": "reasoning",
+      "prompt": "If a train travels 120km in 1.5 hours, and then 80km in 1 hour, what is the average speed for the entire journey?",
+      "response": "To determine the **average speed** for the entire journey, we use the standard formula:\n\n$$\n\\text{Average Speed} = \\frac{\\text{Total Distance}}{\\text{Total Time}}\n$$\n\n---\n\n### Step 1: Calculate Total Distance\n\nThe train travels:\n- 120 km in the first segment\n- 80 km in the second segment\n\n$$\n\\text{Total Distance} = 120 \\, \\text{km} + 80 \\, \\text{km} = 200 \\, \\text{km}\n$$\n\n---\n\n### Step 2: Calculate Total Time\n\nThe time taken for each segment is:\n- First segment: 1.5 hours\n- Second segment: 1 hour\n\n$$\n\\text{Total Time} = 1.5 \\, \\text{hours} + 1 \\, \\text{hour} = 2.5 \\, \\text{hours}\n$$\n\n---\n\n### Step 3: Compute Average Speed\n\n$$\n\\text{Average Speed} = \\frac{200 \\, \\text{km}}{2.5 \\, \\text{hours}} = 80 \\, \\text{km/h}\n$$\n\n---\n\n### Final Answer:\n\n$$\n\\boxed{80} \\, \\text{km/h}\n$$\n\nThis result makes sense because both segments were traveled at a constant speed of **80 km/h**, so the average speed remains the same as the individual speeds.",
+      "time_seconds": 516.125,
+      "prompt_tokens": 47,
+      "completion_tokens": 964,
+      "tokens_per_second": 1.9,
+      "subjective_rating": null
+    },
+    {
+      "model": "qwen3:4b",
+      "prompt_category": "summarization",
+      "prompt": "Summarize the following paragraph in one sentence:\n\nArtificial intelligence is transforming many industries by enabling automation and improved decision-making. Organizations are adopting AI to streamline workflows, reduce costs, and innovate products.",
+      "response": "Artificial intelligence is transforming industries by enabling automation and enhanced decision-making, which organizations leverage to streamline workflows, reduce costs, and innovate products.",
+      "time_seconds": 99.555,
+      "prompt_tokens": 50,
+      "completion_tokens": 499,
+      "tokens_per_second": 5.0,
+      "subjective_rating": null
+    },
+    {
+      "model": "qwen3:4b",
+      "prompt_category": "structured",
+      "prompt": "List 3 European capitals. Respond ONLY with valid JSON: [{\"city\": ..., \"country\": ...}]",
+      "response": "[\n  {\"city\": \"Paris\", \"country\": \"France\"},\n  {\"city\": \"Berlin\", \"country\": \"Germany\"},\n  {\"city\": \"Rome\", \"country\": \"Italy\"}\n]",
+      "time_seconds": 35.903,
+      "prompt_tokens": 31,
+      "completion_tokens": 195,
+      "tokens_per_second": 5.4,
+      "subjective_rating": null
+    },
+    {
+      "model": "qwen3:4b",
+      "prompt_category": "code",
+      "prompt": "Write a Python function that returns the fibonacci sequence up to n as a list.",
+      "response": "ERROR: Request timed out.",
+      "time_seconds": null,
+      "prompt_tokens": null,
+      "completion_tokens": null,
+      "tokens_per_second": null,
+      "subjective_rating": null
+    },
+    {
+      "model": "qwen3:4b",
+      "prompt_category": "instruction",
+      "prompt": "Follow these rules: 1) give a 2-line answer, 2) prefix with 'RESULT:'.\nExplain photosynthesis.",
+      "response": "RESULT: Photosynthesis is the process where plants convert light energy into chemical energy.  \nThey use carbon dioxide and water to produce glucose and oxygen.",
+      "time_seconds": 74.091,
+      "prompt_tokens": 38,
+      "completion_tokens": 385,
+      "tokens_per_second": 5.2,
+      "subjective_rating": null
+    },
+    {
+      "model": "llama3.2:3b",
+      "prompt_category": "factual",
+      "prompt": "What causes tides on Earth? Answer in 2-3 sentences.",
+      "response": "Tides on Earth are primarily caused by the gravitational pull of the Moon and, to a lesser extent, the Sun, which pulls the ocean water towards them. As the Moon orbits the Earth, its gravitational force creates bulges in the ocean, resulting in two high tides and two low tides each day. The combined effects of the Moon's gravity and the Sun's gravity also contribute to the tidal patterns around the world.",
+      "time_seconds": 126.426,
+      "prompt_tokens": 40,
+      "completion_tokens": 87,
+      "tokens_per_second": 0.7,
+      "subjective_rating": null
+    },
+    {
+      "model": "llama3.2:3b",
+      "prompt_category": "reasoning",
+      "prompt": "If a train travels 120km in 1.5 hours, and then 80km in 1 hour, what is the average speed for the entire journey?",
+      "response": "To find the average speed for the entire journey, we need to calculate the total distance traveled and the total time taken.\n\nTotal distance = 120 km + 80 km = 200 km\nTotal time = 1.5 hours + 1 hour = 2.5 hours\n\nAverage speed = Total distance / Total time\n= 200 km / 2.5 hours\n= 80 km/h\n\nSo, the average speed for the entire journey is 80 km/h.",
+      "time_seconds": 7.136,
+      "prompt_tokens": 59,
+      "completion_tokens": 100,
+      "tokens_per_second": 14.0,
+      "subjective_rating": null
+    },
+    {
+      "model": "llama3.2:3b",
+      "prompt_category": "summarization",
+      "prompt": "Summarize the following paragraph in one sentence:\n\nArtificial intelligence is transforming many industries by enabling automation and improved decision-making. Organizations are adopting AI to streamline workflows, reduce costs, and innovate products.",
+      "response": "The increasing adoption of artificial intelligence is revolutionizing various industries by enabling automation, improved decision-making, and innovation.",
+      "time_seconds": 0.67,
+      "prompt_tokens": 65,
+      "completion_tokens": 23,
+      "tokens_per_second": 34.3,
+      "subjective_rating": null
+    },
+    {
+      "model": "llama3.2:3b",
+      "prompt_category": "structured",
+      "prompt": "List 3 European capitals. Respond ONLY with valid JSON: [{\"city\": ..., \"country\": ...}]",
+      "response": "[{ \"city\": \"Berlin\", \"country\": \"Germany\" }, { \"city\": \"Paris\", \"country\": \"France\" }, { \"city\": \"Rome\", \"country\": \"Italy\" }]",
+      "time_seconds": 7.377,
+      "prompt_tokens": 46,
+      "completion_tokens": 44,
+      "tokens_per_second": 6.0,
+      "subjective_rating": null
+    },
+    {
+      "model": "llama3.2:3b",
+      "prompt_category": "code",
+      "prompt": "Write a Python function that returns the fibonacci sequence up to n as a list.",
+      "response": "def fibonacci(n):\n    \"\"\"\n    Returns the Fibonacci sequence up to n as a list.\n\n    Args:\n        n (int): The number of terms in the Fibonacci sequence.\n\n    Returns:\n        list: A list containing the first n numbers in the Fibonacci sequence.\n    \"\"\"\n    # Initialize the first two numbers in the sequence\n    a, b = 0, 1\n\n    # Create a list to store the sequence\n    sequence = [a, b]\n\n    # Generate the remaining terms in the sequence\n    for _ in range(2, n):\n        # Calculate the next term as the sum of the previous two\n        a, b = b, a + b\n        # Append the new term to the sequence\n        sequence.append(b)\n\n    return sequence",
+      "time_seconds": 2.995,
+      "prompt_tokens": 41,
+      "completion_tokens": 159,
+      "tokens_per_second": 53.1,
+      "subjective_rating": null
+    },
+    {
+      "model": "llama3.2:3b",
+      "prompt_category": "instruction",
+      "prompt": "Follow these rules: 1) give a 2-line answer, 2) prefix with 'RESULT:'.\nExplain photosynthesis.",
+      "response": "RESULT: Photosynthesis is the process by which plants convert light energy from the sun into chemical energy in the form of glucose, releasing oxygen as a byproduct. This vital process supports life on Earth and is essential for the food chain.",
+      "time_seconds": 1.078,
+      "prompt_tokens": 53,
+      "completion_tokens": 48,
+      "tokens_per_second": 44.5,
+      "subjective_rating": null
+    }
+  ],
+  "prompts": [
+    {
+      "category": "factual",
+      "prompt": "What causes tides on Earth? Answer in 2-3 sentences."
+    },
+    {
+      "category": "reasoning",
+      "prompt": "If a train travels 120km in 1.5 hours, and then 80km in 1 hour, what is the average speed for the entire journey?"
+    },
+    {
+      "category": "summarization",
+      "prompt": "Summarize the following paragraph in one sentence:\n\nArtificial intelligence is transforming many industries by enabling automation and improved decision-making. Organizations are adopting AI to streamline workflows, reduce costs, and innovate products."
+    },
+    {
+      "category": "structured",
+      "prompt": "List 3 European capitals. Respond ONLY with valid JSON: [{\"city\": ..., \"country\": ...}]"
+    },
+    {
+      "category": "code",
+      "prompt": "Write a Python function that returns the fibonacci sequence up to n as a list."
+    },
+    {
+      "category": "instruction",
+      "prompt": "Follow these rules: 1) give a 2-line answer, 2) prefix with 'RESULT:'.\nExplain photosynthesis."
+    }
+  ]
+}
