@@ -1,0 +1,402 @@
+[
+  {
+    "question": "How many paid time off (PTO) days do full-time employees receive per calendar year?",
+    "actual_output": "Full-time employees receive 25 days of paid time off (PTO) per calendar year, in addition to public holidays observed at their respective office location.",
+    "expected_output": "Full-time employees receive twenty-five (25) days of paid time off (PTO) per calendar year, in addition to public holidays.",
+    "scores": {
+      "Faithfulness": 1.0,
+      "Answer Relevancy": 1.0,
+      "Contextual Relevancy": 0.0256,
+      "Contextual Recall": 1.0,
+      "Contextual Precision": 1.0
+    },
+    "reasons": {
+      "Faithfulness": "The score is 1.00 because there are no contradictions indicating that the actual output fully aligns with the retrieval context. Great job maintaining accuracy!",
+      "Answer Relevancy": "The score is 1.00 because the response directly and fully addresses the question about PTO days for full-time employees without any irrelevant information.",
+      "Contextual Relevancy": "The score is 0.03 because although the relevant statement 'All full-time employees receive twenty-five (25) days of paid time off (PTO) per calendar year' directly answers the input, the majority of the retrieval context is irrelevant, focusing on unrelated topics such as remote work policies and performance reviews, as indicated by the extensive list of irrelevant reasons.",
+      "Contextual Recall": "The score is 1.00 because the sentence in the expected output exactly matches the information provided in the 1st node in retrieval context, with no discrepancies or missing details.",
+      "Contextual Precision": "The score is 1.00 because the first node in retrieval contexts clearly provides the exact number of PTO days for full-time employees, stating 'All full-time employees receive twenty-five (25) days of paid time off (PTO) per calendar year,' while all subsequent nodes discuss unrelated topics such as performance management, remote work policies, and travel policies, which are irrelevant and correctly ranked lower."
+    },
+    "passed": false
+  },
+  {
+    "question": "How many pre-built report templates does ProjectHub include?",
+    "actual_output": "ProjectHub includes 18 pre-built report templates, including a custom report builder that allows for the creation of additional reports using a drag-and-drop interface.",
+    "expected_output": "ProjectHub includes 18 pre-built report templates.",
+    "scores": {
+      "Faithfulness": 0.6667,
+      "Answer Relevancy": 0.25,
+      "Contextual Relevancy": 0.0179,
+      "Contextual Recall": 1.0,
+      "Contextual Precision": 1.0
+    },
+    "reasons": {
+      "Faithfulness": "The score is 0.67 because the actual output incorrectly states that ProjectHub includes 18 pre-built report templates, whereas the context clarifies that these templates are specifically part of the native reporting module within ProjectHub, indicating a misrepresentation of the source of the templates.",
+      "Answer Relevancy": "The score is 0.25 because the response discusses the custom report builder's features and interface, which do not directly answer the question about the number of pre-built report templates. However, it is somewhat relevant as it relates to reporting capabilities in ProjectHub.",
+      "Contextual Relevancy": "The score is 0.02 because while the retrieval context contains a relevant statement, 'ProjectHub includes a native reporting module with 18 pre-built report templates,' the majority of the context is irrelevant as highlighted by numerous unrelated statements such as 'Supported formats: PDF, DOCX, XLSX, PPTX, PNG, JPG, SVG, MP4, and 40+ additional formats' and 'The version history information is unrelated to the number of pre-built report templates.' This overwhelming irrelevance lowers the overall contextual relevancy score.",
+      "Contextual Recall": "The score is 1.00 because the first node in retrieval context explicitly states that ProjectHub includes 18 pre-built report templates, perfectly matching the expected output.",
+      "Contextual Precision": "The score is 1.00 because the first node in retrieval contexts clearly provides the exact number of pre-built report templates in ProjectHub, as it 'explicitly states' this information, while all subsequent nodes discuss unrelated topics such as API keys, company policies, and product overviews, which justifies their lower ranking."
+    },
+    "passed": false
+  },
+  {
+    "question": "What are the password complexity requirements for NovaTech accounts?",
+    "actual_output": "According to the provided context, passwords for NovaTech accounts must meet the following requirements:\n\n1. Minimum 14 characters in length\n2. At least one uppercase letter\n3. At least one lowercase letter\n4. At least one digit\n5. At least one special character\n6. Passwords cannot contain the user's name or email address\n7. Passwords cannot contain common dictionary words\n8. Password rotation is required every 90 days\n9. Employees receive automated reminders starting 14 days before expiration\n10. Accounts with expired passwords are locked after a 48-hour grace period",
+    "expected_output": "Passwords must be minimum fourteen (14) characters, contain at least one uppercase letter, one lowercase letter, one digit, and one special character. Passwords must not contain the user's name, email address, or common dictionary words.",
+    "scores": {
+      "Faithfulness": 1.0,
+      "Answer Relevancy": 1.0,
+      "Contextual Relevancy": 0.0769,
+      "Contextual Recall": 1.0,
+      "Contextual Precision": 0.5
+    },
+    "reasons": {
+      "Faithfulness": "The score is 1.00 because there are no contradictions; the actual output fully aligns with the retrieval context. Great job maintaining accuracy!",
+      "Answer Relevancy": "The score is 1.00 because the response fully addresses the password complexity requirements for NovaTech accounts without including any irrelevant information. It is clear, concise, and directly relevant to the question asked.",
+      "Contextual Relevancy": "The score is 0.08 because while the retrieval context contains relevant statements such as 'Passwords must meet the following requirements: minimum fourteen (14) characters, at least one uppercase letter, one lowercase letter, one digit, and one special character,' and 'Passwords must not contain the user's name, email address, or common dictionary words,' the majority of the context is irrelevant, focusing on unrelated topics like AI assistants and budget approvals, as indicated by reasons like 'The statement about updating the IT security policy document does not specify any password complexity requirements' and 'This statement is about the NovaTech Copilot AI assistant and budget approval, which is unrelated to password complexity requirements.' This heavy presence of irrelevant information lowers the overall relevancy score.",
+      "Contextual Recall": "The score is 1.00 because the expected output perfectly matches the information found in node 2 of the retrieval context, covering all password requirements without any discrepancies.",
+      "Contextual Precision": "The score is 0.50 because the second node in retrieval contexts, which explicitly states the password complexity requirements, is ranked second rather than first. The first node, ranked first, is irrelevant as it discusses unrelated topics like budget approval and AI assistant features, which should be ranked lower. This misplacement of an irrelevant node before the relevant one lowers the score, but having the relevant node near the top maintains a moderate precision."
+    },
+    "passed": false
+  },
+  {
+    "question": "What was NovaTech's Annual Recurring Revenue (ARR) at the end of Q1 2026?",
+    "actual_output": "NovaTech Solutions' Annual Recurring Revenue (ARR) at the end of Q1 2026 was EUR 18.2 million, representing a 23% year-over-year increase from EUR 14.8 million at the close of Q1 2025.",
+    "expected_output": "Annual Recurring Revenue (ARR) reached \u20ac18.2 million at the end of Q1 2026.",
+    "scores": {
+      "Faithfulness": 1.0,
+      "Answer Relevancy": 1.0,
+      "Contextual Relevancy": 0.0556,
+      "Contextual Recall": 1.0,
+      "Contextual Precision": 0.9167
+    },
+    "reasons": {
+      "Faithfulness": "The score is 1.00 because there are no contradictions; the actual output fully aligns with the retrieval context. Great job maintaining accuracy!",
+      "Answer Relevancy": "The score is 1.00 because the response fully addresses the question without any irrelevant information, providing a clear and direct answer.",
+      "Contextual Relevancy": "The score is 0.06 because despite the presence of relevant statements such as 'Annual Recurring Revenue (ARR) reached EUR 18.2 million at quarter-end' and 'NovaTech's Annual Recurring Revenue (ARR) was \u20ac18.2M at Q1 2026,' the majority of the retrieval context is irrelevant, focusing on unrelated topics like quarterly revenue, staffing, and expenses, which dilutes the overall relevancy.",
+      "Contextual Recall": "The score is 1.00 because the sentence in the expected output perfectly matches the information provided in the 1st node in retrieval context, with no discrepancies or missing details. This clear alignment supports a full contextual recall.",
+      "Contextual Precision": "The score is 0.92 because the first, second, and fourth nodes in retrieval contexts, which explicitly state the ARR figure for Q1 2026, are correctly ranked higher. However, the third and fifth nodes, which are irrelevant as they do not contain ARR data, appear within the top five, slightly lowering the score."
+    },
+    "passed": false
+  },
+  {
+    "question": "What is the maximum nightly rate for hotel accommodation during business travel?",
+    "actual_output": "The maximum nightly rate for hotel accommodation during domestic business travel is \u20ac150, and for international business travel, it is \u20ac200. Exceptions may be approved by the Finance team on a case-by-case basis for high-cost cities (e.g., London, San Francisco, Zurich).",
+    "expected_output": "The maximum nightly rate is \u20ac150 for domestic travel and \u20ac200 for international travel, with exceptions possible for high-cost cities like London, San Francisco, or Zurich with Finance team approval.",
+    "scores": {
+      "Faithfulness": 1.0,
+      "Answer Relevancy": 1.0,
+      "Contextual Relevancy": 0.0278,
+      "Contextual Recall": 1.0,
+      "Contextual Precision": 1.0
+    },
+    "reasons": {
+      "Faithfulness": "The score is 1.00 because there are no contradictions indicating that the actual output aligns perfectly with the retrieval context.",
+      "Answer Relevancy": "The score is 1.00 because the response fully addresses the question about the maximum nightly rate for hotel accommodation during business travel without including any irrelevant information.",
+      "Contextual Relevancy": "The score is 0.03 because the vast majority of the retrieval context statements, such as 'All flight bookings must be made through the company's preferred travel platform' and 'Economy class is the standard for flights under six (6) hours,' are unrelated to the maximum nightly rate for hotel accommodation. Only two statements are relevant: 'The maximum nightly rate for hotel accommodation is \u20ac150 for domestic travel and \u20ac200 for international travel,' and 'Exceptions for high-cost cities (e.g., London, San Francisco, Zurich) may be approved by the Finance team on a case-by-case basis.' This limited relevant information amidst extensive irrelevant content justifies the low relevancy score.",
+      "Contextual Recall": "The score is 1.00 because the expected output perfectly matches the information provided in the 1st node in retrieval context, detailing maximum nightly rates and exceptions with Finance team approval, with no discrepancies.",
+      "Contextual Precision": "The score is 1.00 because the first node in the retrieval contexts clearly provides the maximum nightly rate for hotel accommodation during business travel, as indicated by the reason stating it explicitly. All subsequent nodes are irrelevant, discussing unrelated topics such as team days, API keys, sales performance, and remote work policies, which justifies their lower ranking."
+    },
+    "passed": false
+  },
+  {
+    "question": "What is the difference in password rotation requirements between employee user accounts and infrastructure credentials after the March 2026 policy change?",
+    "actual_output": "After the March 2026 policy change, the following differences exist in password rotation requirements:\n\n- Employee user accounts: Passwords must be rotated every 90 days.\n- Infrastructure credentials (SSH keys, service accounts): The rotation schedule is not specified as being different from the current 90-day requirement.",
+    "expected_output": "Employee user accounts now require password rotation every 180 days (changed from 90 days in March 2026), while infrastructure credentials (SSH keys, service accounts) remain on the stricter 90-day rotation schedule.",
+    "scores": {
+      "Faithfulness": 0.5,
+      "Answer Relevancy": 1.0,
+      "Contextual Relevancy": 0.2558,
+      "Contextual Recall": 1.0,
+      "Contextual Precision": 1.0
+    },
+    "reasons": {
+      "Faithfulness": "The score is 0.50 because the actual output incorrectly states the password rotation period, contradicting the retrieval context that specifies the rotation was extended from 90 to 180 days before March 2026 following Marcus's proposal.",
+      "Answer Relevancy": "The score is 1.00 because the response fully addresses the difference in password rotation requirements between employee user accounts and infrastructure credentials after the March 2026 policy change, with no irrelevant information included.",
+      "Contextual Relevancy": "The score is 0.26 because most reasons for irrelevancy highlight that the retrieval context largely does not address password rotation differences, e.g., 'The statement about VPN capacity and company laptops is unrelated to password rotation requirements.' However, relevant statements such as 'Decision: Password rotation extended from 90 days to 180 days for employee user accounts, effective immediately. Infrastructure credentials remain on 90-day rotation.' directly answer the input question, indicating some relevant information is present but limited.",
+      "Contextual Recall": "The score is 1.00 because the sentence in the expected output is fully supported by the information in node 1 of the retrieval context, which clearly states the password rotation changes for employee user accounts and infrastructure credentials with no contradictions or missing details.",
+      "Contextual Precision": "The score is 1.00 because the first node in retrieval contexts clearly provides the relevant information, stating the password rotation changes for employee user accounts and infrastructure credentials. Although there are several irrelevant nodes ranked after it, their reasons such as focusing on unrelated security measures and organizational updates justify their lower ranking, ensuring the relevant node is prioritized effectively."
+    },
+    "passed": false
+  },
+  {
+    "question": "How does the incident response severity classification differ between P1 (Critical) and P2 (High) incidents?",
+    "actual_output": "According to the provided context, the main differences in incident response severity classification between P1 (Critical) and P2 (High) incidents are:\n\nP1 (Critical):\n\n* Requires acknowledgment within 15 minutes of detection\n* Full Incident Response Team must be assembled within 30 minutes\n* CEO, General Counsel, and Board Security Committee must be notified within 1 hour\n* External forensic support must be engaged within 2 hours if the scope of compromise is not fully determined\n\nP2 (High):\n\n* Requires acknowledgment within 1 hour of detection\n* Incident Commander and Security Operations Lead must be engaged within 1 hour\n* Preliminary impact assessment must be completed within 4 hours, which includes identifying all potentially affected systems, determining whether any customer data may have been accessed, and evaluating the attack vector\n* Engineering Lead joins the response within 2 hours to begin technical containment\n* Status update must be provided to the CISO every 2 hours until the incident is downgraded or resolved",
+    "expected_output": "P1 incidents involve confirmed unauthorized access to Restricted data or complete production outages affecting all customers, requiring acknowledgment within 15 minutes, full IRT assembly within 30 minutes, and CEO notification within 1 hour. P2 incidents involve confirmed incidents with potential impact but contained scope, such as unauthorized access to Confidential data without exfiltration, requiring acknowledgment within 1 hour, and preliminary impact assessment within 4 hours.",
+    "scores": {
+      "Faithfulness": 1.0,
+      "Answer Relevancy": 1.0,
+      "Contextual Relevancy": 0.3621,
+      "Contextual Recall": 1.0,
+      "Contextual Precision": 1.0
+    },
+    "reasons": {
+      "Faithfulness": "The score is 1.00 because there are no contradictions between the actual output and the retrieval context, indicating perfect alignment.",
+      "Answer Relevancy": "The score is 1.00 because the response fully addresses the difference between P1 (Critical) and P2 (High) incident severities without including any irrelevant information. It is clear and concise, making it perfectly relevant to the input question.",
+      "Contextual Relevancy": "The score is 0.36 because while the retrieval context provides detailed descriptions of P1 and P2 incident classifications and response timelines, much of the context is irrelevant as it focuses on unrelated topics like P3/P4 incidents, data classification, and company policies, as noted in the reasons for irrelevancy such as 'The statement about P3 severity level is not relevant' and 'This statement describes the Public data classification, unrelated to incident response severity levels.' However, relevant statements like 'P1 \u2014 Critical: An active, ongoing breach involving confirmed unauthorized access to Restricted data...' and 'P2 \u2014 High: A confirmed security incident with potential for significant impact but where active exploitation is contained or limited in scope.' do address the input question, justifying the moderate score.",
+      "Contextual Recall": "The score is 1.00 because all sentences in the expected output directly correspond to detailed information found in node 1 of the retrieval context, covering incident severity levels, response times, and notification requirements accurately and completely.",
+      "Contextual Precision": "The score is 1.00 because the first node in retrieval contexts clearly provides detailed and specific information distinguishing P1 and P2 incidents, such as acknowledgment timelines, making it highly relevant. The subsequent nodes, ranked lower, focus on unrelated topics like data classification, company policies, and encryption standards, which justifies their lower ranking and maintains perfect contextual precision."
+    },
+    "passed": true
+  },
+  {
+    "question": "What are the key differences between the Shared Analytics Dashboard in ProjectHub versus in Insight?",
+    "actual_output": "According to the provided context, the key differences between the Shared Analytics Dashboard in NovaTech ProjectHub and NovaTech Insight are:\n\n1. Data scope:\n\t* ProjectHub: Limited to ProjectHub data only (tasks, sprints, time entries, resources)\n\t* Insight: Can combine ProjectHub data with any connected data source (databases, SaaS platforms, files)\n2. Custom widget creation:\n\t* ProjectHub: Users can rearrange widgets and adjust date ranges, but cannot create custom widgets\n\t* Insight: Allows users to create custom widgets using the drag-and-drop builder or NEL expressions\n3. Refresh interval:\n\t* ProjectHub: Every 30 minutes\n\t* Insight: Matches the connector refresh rates (see Data Connectors section above)\n4. Sharing and export:\n\t* ProjectHub: Maximum of 3 shared dashboards per project (Starter), 10 per project (Professional), unlimited (Enterprise); Screenshot (PNG) and PDF export of the dashboard view\n\t* Insight: Can share with any user in the organization, embedded externally, or published as public links (Enterprise only); PNG, PDF, XLSX, and scheduled email distribution\n5. Interactive drill-down:\n\t* ProjectHub: Not available\n\t* Insight: Allows users to click on any data point to explore underlying records\n6. Cross-dashboard linking:\n\t* ProjectHub: Not mentioned\n\t* Insight: Allows users to create navigation paths between related dashboards",
+    "expected_output": "The ProjectHub dashboard has 8 pre-built widgets, cannot create custom widgets, only uses ProjectHub data, refreshes every 30 minutes, and lacks interactive drill-down and row-level security. The Insight dashboard has 8 widgets plus 30+ visualization types, supports custom widgets, can combine ProjectHub data with any connected source, has variable refresh intervals up to real-time, and includes interactive drill-down, row-level security, embedding, and scheduled distribution.",
+    "scores": {
+      "Faithfulness": 0.9286,
+      "Answer Relevancy": 1.0,
+      "Contextual Relevancy": 0.4043,
+      "Contextual Recall": 1.0,
+      "Contextual Precision": 0.25
+    },
+    "reasons": {
+      "Faithfulness": "The score is 0.93 because the actual output incorrectly includes time entries as part of the ProjectHub Shared Analytics Dashboard data, which contradicts the retrieval context that only lists 8 specific widgets focused on project analytics without mentioning time entries.",
+      "Answer Relevancy": "The score is 1.00 because the response fully addresses the question without including any irrelevant information, providing a clear and focused comparison between the Shared Analytics Dashboards in ProjectHub and Insight.",
+      "Contextual Relevancy": "The score is 0.40 because most retrieval context statements are irrelevant, such as those about admin certification and onboarding milestones, while only a limited set of statements, like 'The Shared Analytics Dashboard in ProjectHub provides project-focused analytics with 8 pre-built widgets' and 'The Shared Analytics Dashboard in Insight is a superset of the ProjectHub version,' directly address the key differences between the dashboards.",
+      "Contextual Recall": "The score is 1.00 because the expected output accurately reflects the details provided in node 1 of the retrieval context, with sentence 1 corresponding to ProjectHub dashboard features and sentence 2 to Insight dashboard features, capturing all specified attributes without any unsupported information.",
+      "Contextual Precision": "The score is 0.25 because the only relevant node is ranked fourth in the retrieval contexts, while the first three nodes are irrelevant, as indicated by reasons such as 'The document discusses admin certification, support channels, and professional services, which are unrelated to the differences between the Shared Analytics Dashboards in ProjectHub and Insight' (node 1), 'This document provides a company overview and product guide introduction but does not detail the Shared Analytics Dashboard features or differences' (node 2), and 'This document covers alert frequency, natural language query, and reporting features in Insight but does not compare the Shared Analytics Dashboards in ProjectHub and Insight' (node 3). These irrelevant nodes being ranked higher lowers the score. However, the presence of a highly relevant node with detailed information about the dashboards at rank 4 justifies the score being above zero."
+    },
+    "passed": false
+  },
+  {
+    "question": "What was the outcome of the CRM vendor selection process between Salesforce and HubSpot, and what factors influenced the decision?",
+    "actual_output": "The outcome of the CRM vendor selection process was that HubSpot Enterprise was selected as the new CRM system. \n\nThe factors that influenced this decision were:\n\n* Estimated cost: EUR 95K/year (lower than Salesforce)\n* Implementation timeline: 6-8 weeks (faster than Salesforce's estimated 4-6 months)\n* Good enough reporting capabilities\n* Enterprise capabilities needed by NovaTech were not fully met by HubSpot, but it was considered a better option than Freshsales.\n\nThe decision to select HubSpot was made after discussion and evaluation of the TCO analysis including implementation costs, training time, and data migration effort.",
+    "expected_output": "HubSpot Enterprise was selected over Salesforce. The decision was based on the 3-year TCO analysis (\u20ac385K for HubSpot vs \u20ac780K for Salesforce), faster implementation timeline (6-8 weeks vs 4-6 months), and sufficient enterprise capabilities. Marcos had argued Salesforce was over-engineered, and the team agreed HubSpot provided the right balance of capabilities and cost.",
+    "scores": {
+      "Faithfulness": 0.7143,
+      "Answer Relevancy": 0.875,
+      "Contextual Relevancy": 0.3214,
+      "Contextual Recall": 1.0,
+      "Contextual Precision": 0.75
+    },
+    "reasons": {
+      "Faithfulness": "The score is 0.71 because the actual output incorrectly states the annual cost for HubSpot as EUR 95K instead of the accurate EUR 128K derived from the 3-year total cost of EUR 385K, and it overlooks that Freshsales lacks the enterprise capabilities needed for scaling, which was a key factor in choosing between Salesforce and HubSpot.",
+      "Answer Relevancy": "The score is 0.88 because the response effectively addresses the outcome and influencing factors of the CRM vendor selection between Salesforce and HubSpot, but it includes an irrelevant comparison to Freshsales, which detracts slightly from its focus.",
+      "Contextual Relevancy": "The score is 0.32 because most retrieval context statements are unrelated to the CRM vendor selection process, as noted by reasons like 'This statement about security awareness training is unrelated to the CRM vendor selection process.' However, relevant statements such as 'Decision: HubSpot Enterprise selected.' and 'James's recommendation: Salesforce.' directly address the outcome and influencing factors, justifying a moderate relevancy score.",
+      "Contextual Recall": "The score is 1.00 because the expected output is fully supported by node 1 in the retrieval context, which includes detailed comparisons of TCO, implementation timelines, and Marcos's argument about Salesforce being over-engineered, perfectly aligning with all sentences in the output.",
+      "Contextual Precision": "The score is 0.75 because the first node in retrieval contexts is highly relevant and ranked first, effectively supporting the input with detailed CRM vendor selection information. However, the presence of irrelevant nodes ranked second and third, such as the one about employee onboarding and Lisbon office expansion, lowers the score since these unrelated nodes appear before all relevant nodes are fully prioritized. The fourth node is relevant but appears after some irrelevant nodes, preventing a perfect score. Overall, the relevant nodes are generally ranked higher, justifying the current score."
+    },
+    "passed": true
+  },
+  {
+    "question": "Compare the data refresh intervals for the native ProjectHub connector across Starter, Professional, and Enterprise tiers in NovaTech Insight.",
+    "actual_output": "According to the context, the data refresh interval for the native ProjectHub connector varies by tier:\n\n- Starter: Every 30 minutes\n- Professional: No specific time frame mentioned (only stating \"varies by connector\", but no further details provided)\n- Enterprise: No specific time frame mentioned (similarly stated as varying by connector)\n\nHowever, it is mentioned that real-time data access (sub-30-second latency) is available on the Enterprise tier for the native ProjectHub connector.",
+    "expected_output": "The native ProjectHub connector refreshes every 60 minutes for Starter tier, every 15 minutes for Professional tier, and in real-time (less than 30 seconds) for Enterprise tier.",
+    "scores": {
+      "Faithfulness": 1.0,
+      "Answer Relevancy": 1.0,
+      "Contextual Relevancy": 0.087,
+      "Contextual Recall": 1.0,
+      "Contextual Precision": 0.2
+    },
+    "reasons": {
+      "Faithfulness": "The score is 1.00 because there are no contradictions; the actual output fully aligns with the retrieval context. Great job maintaining accuracy!",
+      "Answer Relevancy": "The score is 1.00 because the response fully addresses the comparison of data refresh intervals for the native ProjectHub connector across all specified tiers without including any irrelevant information.",
+      "Contextual Relevancy": "The score is 0.09 because the relevant statements mention 'Real-time data access (sub-30-second latency) is available on the Enterprise tier' and 'Refresh interval 30 minutes Varies by connector (up to real-time)', but the majority of the context discusses unrelated topics such as 'data retention and archiving policies' and 'API key limits per account tier', making the overall context largely irrelevant to the specific input about data refresh intervals across tiers.",
+      "Contextual Recall": "The score is 1.00 because the sentence in the expected output is fully supported by node 1 in the retrieval context, which clearly states the refresh intervals for each tier including the real-time access for the Enterprise tier, with no conflicting or missing information.",
+      "Contextual Precision": "The score is 0.20 because the only relevant node is ranked fifth in the retrieval contexts, while the first four nodes are irrelevant. These irrelevant nodes discuss topics like data export, reporting features, support channels, and dashboard refresh intervals, which do not specify the native ProjectHub connector's data refresh intervals across tiers. The relevant node at rank five provides the necessary information about refresh intervals varying by connector and tier, justifying its relevance despite being ranked lower."
+    },
+    "passed": false
+  },
+  {
+    "question": "What are the approved uses for the professional development budget, and what is the annual amount?",
+    "actual_output": "According to the context provided, the approved uses for the professional development budget are:\n\n1. Online courses and certifications (e.g., Coursera, Udemy, AWS certifications)\n2. Conferences and workshops (registration fees; travel expenses are covered separately under the travel policy)\n3. Books and subscriptions (technical and professional publications)\n\nThe annual amount of the professional development budget is \u20ac2,000.",
+    "expected_output": "Every full-time employee receives an annual professional development budget of \u20ac2,000, which can be used for online courses and certifications, conferences and workshops (registration fees), books and subscriptions, and language courses relevant to business needs.",
+    "scores": {
+      "Faithfulness": 0.75,
+      "Answer Relevancy": 0.8,
+      "Contextual Relevancy": 0.1136,
+      "Contextual Recall": 1.0,
+      "Contextual Precision": 0.8667
+    },
+    "reasons": {
+      "Faithfulness": "The score is 0.75 because the actual output implies that the professional development budget covers conference registration fees, whereas the context only states employees can attend up to two external conferences using their learning budget and travel policy, without explicitly confirming coverage of registration fees.",
+      "Answer Relevancy": "The score is 0.80 because the response correctly addresses the approved uses and annual amount of the professional development budget, but it includes an irrelevant statement about travel expenses being covered separately, which is not directly related to the main question.",
+      "Contextual Relevancy": "The score is 0.11 because the reasons for irrelevancy highlight that most statements do not address the professional development budget, while the relevant statements clearly specify the annual amount (\u20ac2,000) and approved uses such as online courses, conferences, and books, indicating limited but present relevance.",
+      "Contextual Recall": "The score is 1.00 because the expected output perfectly matches the information provided in the 1st node in retrieval context, with no discrepancies or missing details.",
+      "Contextual Precision": "The score is 0.87 because the first, second, and fifth nodes in retrieval contexts, ranked 1st, 2nd, and 5th respectively, provide relevant information about the annual amount and approved uses of the professional development budget, as indicated by reasons such as 'Every full-time employee receives an annual professional development budget of \u20ac2,000' and details on approved uses. However, the presence of irrelevant nodes ranked 3rd and 4th, which discuss unrelated topics like API keys and operational efficiency, lowers the score since these irrelevant nodes are ranked higher than some relevant ones."
+    },
+    "passed": false
+  },
+  {
+    "question": "What is the company's policy on using personal devices to access production systems and customer data?",
+    "actual_output": "According to Section 6 of the Acceptable Use Policy, \"Personal devices may not be used to access production systems, source code repositories, or customer data.\" However, it is noted that personal devices may be used to access email and Slack via approved mobile applications, provided the device meets minimum security requirements.",
+    "expected_output": "Personal devices may not be used to access production systems, source code repositories, or customer data. Personal devices may be used to access email and Slack via approved mobile applications, provided the device meets minimum security requirements.",
+    "scores": {
+      "Faithfulness": 1.0,
+      "Answer Relevancy": 1.0,
+      "Contextual Relevancy": 0.1538,
+      "Contextual Recall": 1.0,
+      "Contextual Precision": 1.0
+    },
+    "reasons": {
+      "Faithfulness": "The score is 1.00 because there are no contradictions; the actual output fully aligns with the retrieval context. Great job maintaining accuracy!",
+      "Answer Relevancy": "The score is 1.00 because the response directly addresses the company's policy on using personal devices for accessing production systems and customer data without including any irrelevant information.",
+      "Contextual Relevancy": "The score is 0.15 because while the relevant statements clearly state that 'Connecting personal devices to the NovaTech production network is prohibited' and 'Personal devices may not be used to access production systems, source code repositories, or customer data,' the majority of the retrieval context is irrelevant, focusing on unrelated topics such as general system provisions and monitoring policies, as indicated by reasons like 'This statement describes general provision of systems and devices but does not address the policy on using personal devices to access production systems and customer data.'",
+      "Contextual Recall": "The score is 1.00 because the expected output perfectly matches the information from the 2nd node in the retrieval context, covering all key points without any missing or unsupported details. Great job capturing the content accurately!",
+      "Contextual Precision": "The score is 1.00 because the first node in the retrieval contexts clearly states the company's policy on personal device usage, explicitly mentioning restrictions and allowances, which directly addresses the input. The subsequent nodes, ranked lower, focus on unrelated topics such as password policies, network security, and FAQs, which do not pertain to the policy on personal devices. This proper ranking of relevant information above irrelevant details justifies the perfect score."
+    },
+    "passed": false
+  },
+  {
+    "question": "How do the data handling requirements differ for Confidential versus Restricted data classification levels?",
+    "actual_output": "The data handling requirements differ between Confidential and Restricted data classification levels as follows:\n\n- Vendors handling Confidential data must complete the full NovaT ech Vendor Security Questionnaire (VSQ-Full, 120 questions) and provide evidence of a SOC 2 Type II audit completed within the past 12 months.\n- Vendors handling Restricted data must meet all Confidential-tier requirements plus undergo an on-site (or virtual) security audit conducted by the NovaT ech Security Team.",
+    "expected_output": "Confidential data requires AES-256 encryption at rest, TLS 1.2+ in transit, role-based access with manager approval, NDA for external sharing, and full access + modification logging. Restricted data requires TLS 1.3, named-individual access with CISO approval, hardware token MFA, no external sharing without CISO written authorization, real-time replication, and full access + modification + read logging, with breach notification to CISO + Legal + CEO within 1 hour.",
+    "scores": {
+      "Faithfulness": 1.0,
+      "Answer Relevancy": 1.0,
+      "Contextual Relevancy": 0.3889,
+      "Contextual Recall": 0.0,
+      "Contextual Precision": 0.8667
+    },
+    "reasons": {
+      "Faithfulness": "The score is 1.00 because there are no contradictions; the actual output fully aligns with the retrieval context. Great job maintaining accuracy!",
+      "Answer Relevancy": "The score is 1.00 because the response fully addresses the differences in data handling requirements between Confidential and Restricted data classifications without including any irrelevant information.",
+      "Contextual Relevancy": "The score is 0.39 because while the retrieval context includes relevant statements detailing the classification and handling of Confidential and Restricted data, such as 'Confidential: Information that... Access to Confidential data is restricted to personnel with a documented business need' and 'Restricted: The most sensitive category... Access is limited to specifically named individuals approved by the data owner and the CISO,' much of the context is irrelevant, focusing on unrelated topics like Public or Internal data and general security protocols, as noted in the reasons for irrelevancy.",
+      "Contextual Recall": "The score is 0.00 because none of the sentences in the expected output are supported by the nodes in the retrieval context. The context lacks specific details such as AES-256 encryption at rest, TLS 1.2+ for Confidential data, role-based access with manager approval, hardware token MFA, and timely breach notifications, which are all mentioned in the expected output.",
+      "Contextual Precision": "The score is 0.87 because the first two nodes in retrieval contexts, ranked 1 and 2, provide relevant details on classification definitions and encryption requirements, justifying their high ranking. However, the presence of an irrelevant node at rank 3, which discusses vendor security but lacks specific handling differences, lowers the score from perfect. The fifth node, relevant but ranked lower, also supports the score by contributing breach notification details for Confidential and Restricted data."
+    },
+    "passed": false
+  },
+  {
+    "question": "What is the process for handling customer data deletion requests under GDPR?",
+    "actual_output": "I cannot find this information in the provided documents.",
+    "expected_output": "Under GDPR Article 17 (Right to Erasure), erasure requests are fulfilled within 30 days, subject to applicable legal retention requirements. When erasure conflicts with a legal obligation, the data is restricted from further processing instead. When a customer deletes data through the application, it is soft-deleted and recoverable for 30 days, then permanently purged within 90 days.",
+    "scores": {
+      "Faithfulness": 1.0,
+      "Answer Relevancy": 1.0,
+      "Contextual Relevancy": 0.1852,
+      "Contextual Recall": 0.3333,
+      "Contextual Precision": 0.25
+    },
+    "reasons": {
+      "Faithfulness": "The score is 1.00 because there are no contradictions between the actual output and the retrieval context, indicating complete alignment and faithfulness.",
+      "Answer Relevancy": "The score is 1.00 because the response fully addresses the process for handling customer data deletion requests under GDPR without any irrelevant information.",
+      "Contextual Relevancy": "The score is 0.19 because most reasons for irrelevancy highlight that the retrieval context focuses on unrelated topics such as API limits, encryption standards, and data classification, which do not address GDPR data deletion requests. However, relevant statements like 'Deleted data: When a customer or user deletes data through the application, the data is soft-deleted and recoverable for 30 days' and 'All soft-deleted data is permanently purged within 90 days of the initial deletion request' provide some insight into the deletion process, justifying the low but non-zero relevancy score.",
+      "Contextual Recall": "The score is 0.33 because only the last sentence about soft-deletion and purging within 90 days is supported by node 5 in the retrieval context, while the other sentences regarding GDPR Article 17, 30-day erasure fulfillment, and data restriction due to legal obligations have no explicit support in the retrieved nodes.",
+      "Contextual Precision": "The score is 0.25 because only the fourth node in retrieval contexts, ranked 4th, is relevant and provides a clear explanation of the data deletion process under GDPR, stating the soft-delete and purge timelines. However, three of the top three nodes are irrelevant, discussing unrelated topics like data export, product updates, and data classification without mentioning GDPR or deletion processes, which lowers the score since irrelevant nodes are ranked higher than the relevant one."
+    },
+    "passed": false
+  },
+  {
+    "question": "Based on the Q1 2026 report, what are the three at-risk enterprise accounts and what mitigation strategies are being applied?",
+    "actual_output": "According to the Q1 2026 report, the three at-risk Enterprise accounts with renewals in Q2-Q3 2026 are:\n\n1. Gruber Manufacturing (EUR 178K ARR)\n   - Reason for risk: Sponsor departure; new CTO evaluating alternatives\n   - Mitigation strategy: Dedicated solutions architect assigned to support the new CTO's evaluation process\n\n2. Rheinland Utilities AG (EUR 148K ARR)\n   - Reason for risk: Budget pressure; exploring downgrade to Professional tier\n   - Mitigation strategy: Offered a 12-month commitment at a 10% discount in exchange for maintaining Enterprise-tier service levels\n\n3. Alpen Logistics (EUR 94K ARR)\n   - Reason for risk: Low adoption (32% seat utilization); internal tool preference\n   - Mitigation strategy: Enrolled in the company's adoption acceleration program with weekly check-ins and customized training sessions",
+    "expected_output": "Three at-risk accounts: Gruber Manufacturing (\u20ac178K ARR, June renewal) with sponsor departure, receiving dedicated solutions architect support; Rheinland Utilities AG (\u20ac148K ARR, July renewal) with budget pressure, offered 12-month commitment at 10% discount; Alpen Logistics (\u20ac94K ARR, May renewal) with low adoption, enrolled in adoption acceleration program with weekly check-ins.",
+    "scores": {
+      "Faithfulness": 0.5714,
+      "Answer Relevancy": 1.0,
+      "Contextual Relevancy": 0.1739,
+      "Contextual Recall": 1.0,
+      "Contextual Precision": 1.0
+    },
+    "reasons": {
+      "Faithfulness": "The score is 0.57 because the actual output introduces details not present in the retrieval context, such as a new CTO evaluating alternatives for Gruber Manufacturing, exploring a downgrade to the Professional tier for Rheinland Utilities AG, and specific adoption metrics and tool preferences for Alpen Logistics, which are not supported by the context.",
+      "Answer Relevancy": "The score is 1.00 because the response fully addresses the question without any irrelevant information, providing clear details on the at-risk enterprise accounts and their mitigation strategies.",
+      "Contextual Relevancy": "The score is 0.17 because while the relevant statements clearly identify the three at-risk enterprise accounts and their mitigation strategies, the majority of the retrieval context is irrelevant, focusing on unrelated topics such as competitor features, engineering capacity, and revenue figures, as noted in the reasons for irrelevancy.",
+      "Contextual Recall": "The score is 1.00 because all three at-risk accounts and their specific details in the expected output are fully supported by node 1 and node 2 in the retrieval context, with no discrepancies or missing information.",
+      "Contextual Precision": "The score is 1.00 because the first two nodes in the retrieval contexts, ranked 1st and 2nd, directly provide detailed information about the three at-risk enterprise accounts and their mitigation strategies, as indicated by the reasons mentioning explicit listings and specific mitigation details. The subsequent nodes, ranked lower, are irrelevant since they only provide high-level summaries or unrelated information, ensuring that relevant nodes are perfectly prioritized above irrelevant ones."
+    },
+    "passed": false
+  },
+  {
+    "question": "What is the maximum reimbursement amount for mental health counseling services under the Employee Assistance Program?",
+    "actual_output": "I cannot find this information in the provided documents.",
+    "expected_output": "The documents do not contain information about reimbursement amounts for mental health services. They only state that employees may access up to eight (8) free counseling sessions per year through the EAP.",
+    "scores": {
+      "Faithfulness": 1.0,
+      "Answer Relevancy": 1.0,
+      "Contextual Relevancy": 0.0526,
+      "Contextual Recall": 0.5,
+      "Contextual Precision": 1.0
+    },
+    "reasons": {
+      "Faithfulness": "The score is 1.00 because there are no contradictions; the actual output fully aligns with the retrieval context. Great job maintaining accuracy!",
+      "Answer Relevancy": "The score is 1.00 because the response fully addresses the question about the maximum reimbursement amount for mental health counseling services under the Employee Assistance Program without including any irrelevant information.",
+      "Contextual Relevancy": "The score is 0.05 because although the relevant statements mention the Employee Assistance Program and free counseling sessions, they do not specify the maximum reimbursement amount for mental health counseling services, while the majority of the retrieval context discusses unrelated topics such as travel policies and performance reviews.",
+      "Contextual Recall": "The score is 0.50 because sentence 1 of the expected output correctly reflects information from node 1 in the retrieval context about employees accessing up to eight free counseling sessions per year through the EAP. However, the statement about reimbursement amounts for mental health services is not supported by any nodes, as the retrieval context lacks this information, limiting the overall recall.",
+      "Contextual Precision": "The score is 1.00 because the first node in retrieval contexts, which states that employees and their immediate family members may access up to eight free counseling sessions per year through the Employee Assistance Program, is highly relevant and correctly ranked at the top. The subsequent nodes, ranked lower, discuss unrelated topics such as travel policies, onboarding procedures, performance ratings, and analytics dashboards, which justifies their lower ranking and maintains perfect contextual precision."
+    },
+    "passed": false
+  },
+  {
+    "question": "If an employee's laptop is lost or stolen, what is the required reporting timeframe, and what might happen if the employee fails to report it within that window?",
+    "actual_output": "According to the provided context, if a laptop with full-disk encryption is reported lost or stolen, P4 incidents require acknowledgment within 24 hours. If an employee fails to report their lost or stolen laptop within this timeframe, there may be consequences related to security policy violations and potential data breaches. However, the exact consequences are not specified in the provided context.",
+    "expected_output": "Lost or stolen devices must be reported to IT within four (4) hours of discovery via the IT emergency hotline or it-security@novatech-solutions.com. Failure to report within this timeframe could result in disciplinary action as this violates IT security policy. Additionally, the delay increases the risk of unauthorized access to company data, and if customer data is compromised due to delayed reporting, the incident classification could escalate, potentially leading to breach notification requirements and further consequences for the employee including termination for gross misconduct.",
+    "scores": {
+      "Faithfulness": 0.6667,
+      "Answer Relevancy": 1.0,
+      "Contextual Relevancy": 0.0652,
+      "Contextual Recall": 0.0,
+      "Contextual Precision": 0.5
+    },
+    "reasons": {
+      "Faithfulness": "The score is 0.67 because the actual output incorrectly states that P4 incidents require acknowledgment within 24 hours, which is not specified in the retrieval context that only defines priority levels and response times generally without detailing P4 acknowledgment times.",
+      "Answer Relevancy": "The score is 1.00 because the response fully addresses the required reporting timeframe and consequences of failing to report a lost or stolen laptop, with no irrelevant information included.",
+      "Contextual Relevancy": "The score is 0.07 because the relevant statements only generally mention that employees must report security incidents immediately, such as 'Any employee who suspects a security incident must report it immediately,' but do not specify the required reporting timeframe or consequences for failing to report a lost or stolen laptop. Meanwhile, the majority of the retrieval context is unrelated, focusing on onboarding, performance reviews, and other unrelated topics, as indicated by reasons like 'This statement is about the onboarding process and role ramp-up, which is unrelated to reporting lost or stolen laptops.'",
+      "Contextual Recall": "The score is 0.00 because none of the sentences in the expected output about reporting lost or stolen devices within four hours, disciplinary actions, risks of unauthorized access, incident classification escalation, breach notification, or termination for gross misconduct are supported by any nodes in the retrieval context.",
+      "Contextual Precision": "The score is 0.50 because the first node in retrieval contexts, ranked first, is irrelevant as it discusses onboarding and employee reviews without mentioning reporting lost or stolen laptops, which should be ranked lower than relevant nodes. However, the second node, ranked second, is relevant and details incident response procedures with specific reporting timeframes, justifying the current score. The presence of irrelevant nodes ranked higher than some relevant ones prevents a higher score."
+    },
+    "passed": false
+  },
+  {
+    "question": "What specific recognition do employees receive for serving as onboarding buddies?",
+    "actual_output": "Employees who serve as onboarding buddies are recognized in their own performance reviews, with exceptional buddies being eligible for the quarterly NovaStar Award.",
+    "expected_output": "Buddies are recognized for their contribution in their own performance reviews, and exceptional buddies are eligible for the quarterly NovaStar Award (which includes a \u20ac250 bonus and recognition at the company all-hands meeting).",
+    "scores": {
+      "Faithfulness": 1.0,
+      "Answer Relevancy": 1.0,
+      "Contextual Relevancy": 0.0417,
+      "Contextual Recall": 1.0,
+      "Contextual Precision": 0.8333
+    },
+    "reasons": {
+      "Faithfulness": "The score is 1.00 because there are no contradictions; the actual output perfectly aligns with the retrieval context. Great job maintaining accuracy!",
+      "Answer Relevancy": "The score is 1.00 because the response directly addresses the question about specific recognition for onboarding buddies without including any irrelevant information.",
+      "Contextual Relevancy": "The score is 0.04 because although the retrieval context includes relevant statements such as 'Buddies are recognized for their contribution in their own performance reviews, and exceptional buddies are eligible for the quarterly NovaStar Award,' the majority of the context is irrelevant, focusing on unrelated policies and procedures, which diminishes overall relevancy.",
+      "Contextual Recall": "The score is 1.00 because the sentence in the expected output perfectly matches the information found in node 3 of the retrieval context, with no discrepancies or missing details.",
+      "Contextual Precision": "The score is 0.83 because the first node in retrieval contexts correctly ranks a relevant node that directly addresses recognition for onboarding buddies, as it states, 'Buddies are recognized for their contribution in their own performance reviews, and exceptional buddies are eligible for the quarterly NovaStar Award (see Section 8)'. However, some irrelevant nodes, such as the second node discussing 'Team Days' and leave policies, appear before other relevant nodes, which lowers the score from being perfect. Overall, relevant nodes are generally ranked higher, but the presence of some unrelated nodes early in the ranking prevents a higher score."
+    },
+    "passed": false
+  },
+  {
+    "question": "What is the company's parental leave policy for new parents?",
+    "actual_output": "I cannot find this information in the provided documents.",
+    "expected_output": "The documents do not contain information about parental leave policies.",
+    "scores": {
+      "Faithfulness": 1.0,
+      "Answer Relevancy": 1.0,
+      "Contextual Relevancy": 0.0,
+      "Contextual Recall": 1.0,
+      "Contextual Precision": 0.0
+    },
+    "reasons": {
+      "Faithfulness": "The score is 1.00 because there are no contradictions; the actual output fully aligns with the retrieval context. Great job maintaining accuracy!",
+      "Answer Relevancy": "The score is 1.00 because the response fully addresses the question about the company's parental leave policy without any irrelevant information, providing a clear and direct answer.",
+      "Contextual Relevancy": "The score is 0.00 because none of the statements in the retrieval context address the company's parental leave policy for new parents, as highlighted by reasons such as \"The statement 'Team Days Each team must designate at least one (1) mandatory in-office day per week for collaborative work' is unrelated to the company's parental leave policy for new parents\" and \"Although the meeting includes 'Policy Updates', no specific parental leave policy details are provided in the context.\"",
+      "Contextual Recall": "The score is 1.00 because the first node in retrieval context clearly details leave policies such as Annual Leave and Sick Leave but does not mention parental leave, perfectly supporting the statement that the documents lack information on parental leave policies.",
+      "Contextual Precision": "The score is 0.00 because all nodes in the retrieval contexts are irrelevant to the input, as they discuss topics like 'Leave and Time-Off Policy' without mentioning parental leave, 'Expense Policy Violations', onboarding processes, CRM decisions, and security training mandates. Since no relevant nodes are present, none are ranked higher than irrelevant ones, resulting in the lowest possible score."
+    },
+    "passed": false
+  },
+  {
+    "question": "Does NovaTech offer a 401(k) matching program for US-based employees?",
+    "actual_output": "I cannot find this information in the provided documents.",
+    "expected_output": "The documents do not contain information about 401(k) matching or any retirement benefits for US-based employees.",
+    "scores": {
+      "Faithfulness": 1.0,
+      "Answer Relevancy": 1.0,
+      "Contextual Relevancy": 0.0149,
+      "Contextual Recall": 0.0,
+      "Contextual Precision": 0.0
+    },
+    "reasons": {
+      "Faithfulness": "The score is 1.00 because there are no contradictions; the actual output fully aligns with the retrieval context. Great job maintaining accuracy!",
+      "Answer Relevancy": "The score is 1.00 because the response directly addresses the question about NovaTech's 401(k) matching program with clear and relevant information. There are no irrelevant statements, making the answer fully pertinent and concise.",
+      "Contextual Relevancy": "The score is 0.01 because the only relevant statement is that the handbook outlines policies and benefits for all employees, but none of the detailed retrieval context addresses 401(k) matching programs specifically, as highlighted by numerous reasons stating the irrelevance of statements about grievances, disciplinary processes, AI projects, data policies, travel, and allowances to the 401(k) matching question.",
+      "Contextual Recall": "The score is 0.00 because none of the sentences in the expected output are supported by any nodes in the retrieval context, as no information about 401(k) matching or retirement benefits for US-based employees is present in the retrieved nodes.",
+      "Contextual Precision": "The score is 0.00 because all nodes in the retrieval contexts are irrelevant, as each node's reason explicitly states the absence of information about 401(k) matching or retirement benefits for US-based employees. Since no relevant nodes are present to be ranked higher, the score cannot be higher."
+    },
+    "passed": false
+  }
+]
