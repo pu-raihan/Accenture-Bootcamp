@@ -1,0 +1,66 @@
+{
+  "execution_summary": {
+    "start_time": "2026-02-26T14:50:17.976986",
+    "end_time": "2026-02-26T14:50:36.135785",
+    "duration_seconds": 18.16,
+    "total_events": 6
+  },
+  "events": [
+    {
+      "timestamp": "2026-02-26T14:50:17.976985",
+      "event_type": "CREW_START",
+      "agent": "System",
+      "details": {
+        "message": "Crew execution started"
+      }
+    },
+    {
+      "timestamp": "2026-02-26T14:50:17.976985",
+      "event_type": "RESOURCE_INIT",
+      "agent": "Casting Director",
+      "details": {
+        "tools": [
+          "role_matcher",
+          "fetch_actor_database"
+        ],
+        "specialty": "Finding perfect actor matches"
+      }
+    },
+    {
+      "timestamp": "2026-02-26T14:50:17.976985",
+      "event_type": "RESOURCE_INIT",
+      "agent": "Schedule Coordinator",
+      "details": {
+        "tools": [
+          "actor_availability_checker"
+        ],
+        "specialty": "Managing production schedule"
+      }
+    },
+    {
+      "timestamp": "2026-02-26T14:50:17.984245",
+      "event_type": "CREW_START",
+      "agent": "Casting Crew",
+      "details": {
+        "mission": "Find and schedule ideal actors"
+      }
+    },
+    {
+      "timestamp": "2026-02-26T14:50:36.135785",
+      "event_type": "CREW_COMPLETE",
+      "agent": "Casting Crew",
+      "details": {
+        "status": "success"
+      }
+    },
+    {
+      "timestamp": "2026-02-26T14:50:36.135785",
+      "event_type": "CREW_END",
+      "agent": "System",
+      "details": {
+        "message": "Crew execution completed",
+        "duration_seconds": 18.16
+      }
+    }
+  ]
+}
