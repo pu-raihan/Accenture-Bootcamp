@@ -1,0 +1,152 @@
+name: Send merged PR to standalone API
+
+on:
+  pull_request:
+    types: [closed]
+
+jobs:
+  send-pr-data:
+    if: github.event.pull_request.merged == true
+    runs-on: ubuntu-latest
+
+    permissions:
+      pull-requests: read
+      contents: read
+      issues: read
+
+    steps:
+      - name: Gather PR context and send to API
+        uses: actions/github-script@v7
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            const pr = context.payload.pull_request;
+            const owner = context.repo.owner;
+            const repo = context.repo.repo;
+            const pull_number = pr.number;
+
+            // 1) Get changed files
+            const files = await github.paginate(
+              github.rest.pulls.listFiles,
+              {
+                owner,
+                repo,
+                pull_number,
+                per_page: 100
+              }
+            );
+
+            // 2) Get commits
+            const commits = await github.paginate(
+              github.rest.pulls.listCommits,
+              {
+                owner,
+                repo,
+                pull_number,
+                per_page: 100
+              }
+            );
+
+            // 3) Get issue comments (PR discussion tab comments)
+            const issueComments = await github.paginate(
+              github.rest.issues.listComments,
+              {
+                owner,
+                repo,
+                issue_number: pull_number,
+                per_page: 100
+              }
+            );
+
+            // 4) Get review comments (inline code comments)
+            const reviewComments = await github.paginate(
+              github.rest.pulls.listReviewComments,
+              {
+                owner,
+                repo,
+                pull_number,
+                per_page: 100
+              }
+            );
+
+            // 5) Get reviews (APPROVED / CHANGES_REQUESTED / COMMENTED)
+            const reviews = await github.paginate(
+              github.rest.pulls.listReviews,
+              {
+                owner,
+                repo,
+                pull_number,
+                per_page: 100
+              }
+            );
+
+            const payload = {
+              repository: {
+                owner,
+                name: repo,
+                full_name: `${owner}/${repo}`
+              },
+              pull_request: {
+                number: pr.number,
+                title: pr.title,
+                body: pr.body,
+                state: pr.state,
+                merged: pr.merged,
+                merged_at: pr.merged_at,
+                merge_commit_sha: pr.merge_commit_sha,
+                base_branch: pr.base.ref,
+                head_branch: pr.head.ref,
+                author: pr.user?.login,
+                labels: (pr.labels || []).map(l => l.name)
+              },
+              files: files.map(f => ({
+                filename: f.filename,
+                status: f.status,
+                additions: f.additions,
+                deletions: f.deletions,
+                changes: f.changes,
+                patch: f.patch || null
+              })),
+              commits: commits.map(c => ({
+                sha: c.sha,
+                message: c.commit?.message,
+                author: c.author?.login || c.commit?.author?.name
+              })),
+              issue_comments: issueComments.map(c => ({
+                author: c.user?.login,
+                body: c.body,
+                created_at: c.created_at
+              })),
+              review_comments: reviewComments.map(c => ({
+                author: c.user?.login,
+                body: c.body,
+                path: c.path,
+                line: c.line,
+                created_at: c.created_at
+              })),
+              reviews: reviews.map(r => ({
+                author: r.user?.login,
+                state: r.state,
+                body: r.body,
+                submitted_at: r.submitted_at
+              }))
+            };
+
+            const response = await fetch(process.env.STANDALONE_API_URL, {
+              method: "POST",
+              headers: {
+                "Content-Type": "application/json",
+                "Authorization": `Bearer ${process.env.STANDALONE_API_TOKEN}`
+              },
+              body: JSON.stringify(payload)
+            });
+
+            if (!response.ok) {
+              const text = await response.text();
+              core.setFailed(`API request failed: ${response.status} ${text}`);
+            }
+
+            console.log(`Successfully sent PR #${pull_number} to standalone API`);
+        env:
+          STANDALONE_API_URL: ${{ secrets.STANDALONE_API_URL }}
+          STANDALONE_API_TOKEN: ${{ secrets.STANDALONE_API_TOKEN }}
